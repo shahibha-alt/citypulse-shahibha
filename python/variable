@@ -1,0 +1,136 @@
+# Opreators
+# Student Details
+
+name = "Shahibha"
+age = 19
+marks = 78
+bonus = 5
+attendance = 82.5
+is_admin = False
+is_teacher = False
+
+print("STUDENT DETAILS")
+print("Name:", name)
+print("Age:", age)
+print("Marks:", marks)
+print("Attendance:", attendance)
+
+
+# 1. ARITHMETIC OPERATORS
+
+
+a = 10
+b = 3
+
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+print("Floor Division:", a // b)
+print("Modulus:", a % b)
+print("Exponent:", a ** b)
+
+
+# 2. COMPARISON OPERATORS
+
+print("\nCOMPARISON OPERATORS")
+
+print("Equal:", marks == 78)
+print("Not Equal:", marks != 50)
+print("Greater Than:", marks > 70)
+print("Less Than:", marks < 90)
+print("Greater Than or Equal:", marks >= 78)
+print("Less Than or Equal:", marks <= 80)
+
+
+# 3. LOGICAL OPERATORS
+
+is_passed = marks >= 40
+has_good_score = marks >= 75
+
+print("AND:", is_passed and has_good_score)
+print("OR:", is_admin or is_teacher)
+print("NOT:", not is_admin)
+print("\nLOGICAL OPERATORS")
+
+# 4. ASSIGNMENT OPERATORS
+
+print("\nASSIGNMENT OPERATORS")
+
+print("Original Marks:", marks)
+
+marks += bonus
+print("After Adding Bonus:", marks)
+
+marks -= 3
+print("After Subtracting:", marks)
+
+marks *= 2
+print("After Multiplication:", marks)
+
+
+# FINAL RESULT
+
+print("\nFINAL RESULT")
+
+print("Student:", name)
+print("Final Marks:", marks)
+print("Passed:", marks >= 40)
+print("Good Score:", marks >= 75)
+print("Eligible:", attendance >= 75 and marks >= 40)
+
+# COLLEGE CANTEEN DISCOUNT
+
+bill_amount = int(input("Enter your bill amount: "))
+
+if bill_amount >= 500:
+    print("You get a 20% discount!")
+elif bill_amount >= 300:
+    print("You get a 10% discount!")
+elif bill_amount >= 100:
+    print("You get a 5% discount!")
+else:
+    print("No discount available.")
+    is_online = False
+
+if is_online:
+    print("Join the class")
+elif is_online == False:
+    print("Class is offline")
+else:
+    print("Invalid")
+
+
+#dictionary inside dictionary
+
+students = {
+    "student1": {
+        "name": "Shahibha",
+        "age": 19
+    },
+    "student2": {
+        "name": "divss",
+        "age": 22
+    }
+}
+print(students)
+print(students["student1"]["name"]) 
+
+#lists
+
+hobbies = ["Reading", "Dancing", "music", "Painting"]
+hobbies.append("Photography")
+hobbies.remove("Dancing")
+print("My hobbies:", hobbies)
+
+
+#tuples
+student = ("Shahibha", 19, "Digital Transformation")
+print("Student:", student)
+print("Count:", student.count(19))
+print("Index:", student.index("Shahibha"))
+
+#set
+skills = {"Python", "Java", "SQL", "Python"}
+skills.add("HTML")
+print("My skills:", skills)
